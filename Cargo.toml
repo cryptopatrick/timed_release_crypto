@@ -1,0 +1,38 @@
+[package]
+name = "timed_release_crypto"
+version = "0.0.1"
+authors = ["CryptoPatrick <cryptopatrick@gmail.com>"]
+description = """
+Abstractions and implementations for sending encrypted messages into the future.
+"""
+documentation = "https://github.com/cryptopatrick/timed_release_crypto"
+homepage = "https://github.com/cryptopatrick/timed_release_crypto"
+repository = "https://github.com/cryptopatrick/timed_release_crypto"
+# keywords are terms that a user might search for (on crates.io).
+keywords = ["cryptography", "crypto", "messaging", "command-line-utilities"]
+# categories are related to crates.io
+categories = ["cryptography", "command-line-utilities"]
+license = "Unlicense OR MIT"
+exclude = ["/.github/", "/ci/", "/scripts/"]
+# build = "build.rs"
+edition = "2021"
+rust-version = "1.80"
+
+[lib]
+name = "timed_release_crypto"
+path = "src/lib.rs"
+
+
+[dependencies]
+num-bigint = { version = "0.4.6", features = ["rand"] }
+num-traits = "0.2.19"
+rand = "0.8.5"
+aes-gcm = "0.10"
+base64 = "0.21"
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+#[[bench]]
+#name = "generate_large_random_prime"
+#harness = false
