@@ -9,9 +9,9 @@ documentation = "https://github.com/cryptopatrick/timed_release_crypto"
 homepage = "https://github.com/cryptopatrick/timed_release_crypto"
 repository = "https://github.com/cryptopatrick/timed_release_crypto"
 # keywords are terms that a user might search for (on crates.io).
-keywords = ["cryptography", "crypto", "messaging", "command-line-utilities"]
+keywords = ["cryptography", "crypto", "messaging"]
 # categories are related to crates.io
-categories = ["cryptography", "command-line-utilities"]
+categories = ["cryptography"]
 license = "Unlicense OR MIT"
 exclude = ["/.github/", "/ci/", "/scripts/"]
 # build = "build.rs"
